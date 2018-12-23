@@ -5,10 +5,10 @@ namespace ConsoleTest{
         public int Fila {get; }
         public int Columna {get;}
 
-        public Posicion(int fila, int Columna){
+        public Posicion(int fila, int columna){
 
             Fila=fila;
-            Columna=Columna;
+            Columna=columna;
         }
 
     }

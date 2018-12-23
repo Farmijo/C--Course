@@ -664,30 +664,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fran\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/farmijo/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fran\\Desktop\\repos\\netCoreStuff\\ConsoleTest\\ConsoleTest.csproj",
+      "projectUniqueName": "/Users/farmijo/Desktop/repos/C--Course/ConsoleTest/ConsoleTest.csproj",
       "projectName": "ConsoleTest",
-      "projectPath": "C:\\Users\\Fran\\Desktop\\repos\\netCoreStuff\\ConsoleTest\\ConsoleTest.csproj",
-      "packagesPath": "C:\\Users\\Fran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fran\\Desktop\\repos\\netCoreStuff\\ConsoleTest\\obj\\",
+      "projectPath": "/Users/farmijo/Desktop/repos/C--Course/ConsoleTest/ConsoleTest.csproj",
+      "packagesPath": "/Users/farmijo/.nuget/packages/",
+      "outputPath": "/Users/farmijo/Desktop/repos/C--Course/ConsoleTest/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/farmijo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
