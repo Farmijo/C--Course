@@ -1,0 +1,8 @@
+namespace ConsoleTest{
+
+    public interface IFigura
+    {
+        void Dibujar();
+        Posicion Pos {get;}
+    }
+}
