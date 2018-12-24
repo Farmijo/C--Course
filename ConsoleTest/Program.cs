@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Collections;
 namespace ConsoleTest
 {
 
@@ -12,6 +13,8 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
+
+            
             Console.WriteLine("1 - Dibujo");
             Console.WriteLine("2 - Salir");
             
@@ -25,8 +28,44 @@ namespace ConsoleTest
                 opcion = DrawMenu();
             }
 
+            
+            //GetMultiplesOf(1,2,5);
+
         }
 
+        static IEnumerable<int> GetMultiplesOf(int n, int start, int end){
+
+            List<int> multiples = new List<int>();
+            for (int i = start; i < end; i++)
+            {
+                if (i % n == 0)
+                {
+                    Console.WriteLine(
+                        $"{i} GetMultiplesOf");
+                    multiples.Add(i);
+                }
+            }
+            return multiples;
+                    
+        }
+
+        static IEnumerable<int> YieldMultiplesOf(int n, int start, int end){
+
+            
+
+            for (int i = start; i < end; i++)
+            {
+                if (i % n == 0)
+                {
+                    Console.WriteLine(
+                        $"{i} YieldMultiplesOf");
+                    yield return i;
+                }
+            }
+
+        }
+        
+        
         static void Foo( Test i){
             
             i.I = 2;

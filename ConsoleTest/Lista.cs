@@ -25,6 +25,7 @@ En caso de no poder crear la clase X generica desde cero, una posible opción es
        int Count {get;}
        T GetAt(int idx); 
        void Add(T item);
+       IEnumerable<T> Find(IPredicate<T> predicate);
     }
 
     public interface ILista {
@@ -44,6 +45,14 @@ En caso de no poder crear la clase X generica desde cero, una posible opción es
 
             _items = new T[limite];
             Count = 0;
+        }
+
+        public IEnumerable<T> Find (IPredicate<T> predicate){
+            foreach(var current in _items){
+                if(current != null && predicate.Match(current)){
+                    yield return current;
+                }
+            }
         }
 
           object ILista.GetAt(int idx){
@@ -73,7 +82,7 @@ En caso de no poder crear la clase X generica desde cero, una posible opción es
         public IEnumerator<T> GetEnumerator(){
 
             //En este caso, yield nos permite ahorrarnos el implementar todos los metodos que requiere el implementar
-            //la interfaz IEnumerable
+            //la interfaz IEnumerable. El implementar esa interfaz, por otra parte, permite iterar con foreach
             foreach (var item in _items)
             {
                 yield return item; 

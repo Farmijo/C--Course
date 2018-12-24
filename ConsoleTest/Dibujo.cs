@@ -42,6 +42,17 @@ namespace ConsoleTest{
             Foo(lista2)
              */
 
+            var listaInt = new Lista<int>(10);
+            listaInt.Add(1);
+            listaInt.Add(2);
+            listaInt.Add(3);
+            listaInt.Add(4);
+            listaInt.Add(5);
+            listaInt.Add(6);
+            listaInt.Add(7);
+
+            var odds = listaInt.Find(new PredicateIntOdd());
+
 
         }
   
