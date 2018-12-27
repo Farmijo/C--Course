@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Collections;
+using System;
 namespace ConsoleTest{
  
 
@@ -21,11 +22,17 @@ En caso de no poder crear la clase X generica desde cero, una posible opción es
     }
  */
 
+
+    public delegate bool PredicateDelegate<T>(T item);
     public interface ILista<T> : IEnumerable<T>{
        int Count {get;}
        T GetAt(int idx); 
        void Add(T item);
-       IEnumerable<T> Find(IPredicate<T> predicate);
+       //Delegados Genericos: Func<T,Y>, donde T es el tipo de entrada y Y tipo de salids
+      // IEnumerable<T> SearchByFunc(Func<T,bool> func);
+      // Tambien existe Action, funciones void
+       IEnumerable<T> FindDelegate (Func<T,bool> predicate);
+        IEnumerable<T> FindPredicate(IPredicate<T> predicate);
     }
 
     public interface ILista {
@@ -35,6 +42,7 @@ En caso de no poder crear la clase X generica desde cero, una posible opción es
 
 
     }
+
 
 
     public class Lista<T> : ILista<T>, ILista {
@@ -47,7 +55,7 @@ En caso de no poder crear la clase X generica desde cero, una posible opción es
             Count = 0;
         }
 
-        public IEnumerable<T> Find (IPredicate<T> predicate){
+        public IEnumerable<T> FindPredicate (IPredicate<T> predicate){
             foreach(var current in _items){
                 if(current != null && predicate.Match(current)){
                     yield return current;
@@ -86,6 +94,14 @@ En caso de no poder crear la clase X generica desde cero, una posible opción es
             foreach (var item in _items)
             {
                 yield return item; 
+            }
+        }
+
+        public IEnumerable<T> FindDelegate (Func<T,bool> predicate){
+            foreach(var current in _items){
+                if(current != null && predicate(current)){
+                    yield return current;
+                }
             }
         }
 

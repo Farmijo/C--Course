@@ -29,7 +29,6 @@ namespace ConsoleTest
             }
 
             
-            //GetMultiplesOf(1,2,5);
 
         }
 
@@ -51,8 +50,6 @@ namespace ConsoleTest
 
         static IEnumerable<int> YieldMultiplesOf(int n, int start, int end){
 
-            
-
             for (int i = start; i < end; i++)
             {
                 if (i % n == 0)
@@ -65,12 +62,10 @@ namespace ConsoleTest
 
         }
         
-        
         static void Foo( Test i){
             
             i.I = 2;
         }
-
         static bool DrawMenu(){
 
 

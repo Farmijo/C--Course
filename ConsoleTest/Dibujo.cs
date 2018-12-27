@@ -51,9 +51,32 @@ namespace ConsoleTest{
             listaInt.Add(6);
             listaInt.Add(7);
 
-            var odds = listaInt.Find(new PredicateIntOdd());
+            //Los delegados son "tipos" que especifican funciones (con parametros tipados y retorno tipados)
+            //Vease clase Lista.cs
+
+            //var odds = listaInt.FindPredicate(new PredicateIntOdd());
+            //Esto no se puede hacer, ya que al declarar el delegado, solo tenemos una funcion que acepta un tipo X y retorna un tipo Y
+            //Esa info no es suficiente como para hacer la inferencia de tipos.
+
+            //EJecución por delegados
+            var odds = listaInt.FindDelegate(this.isOdd);
+
+            //Delegado anonimo
+            PredicateDelegate<int> isodd = delegate (int i){return i%2==0;};
+            //Tambien se puede pasar directamente 
+            //var odds = listaInt.FindDelegate(delegate (int i){return i%2==0;});
+
+            //Expresiones lambdas: Opción no tan verbose. Siguen siendo delegados
+
+            PredicateDelegate<int> p2 = i => i%2==0;
+
+            //
 
 
+        }
+
+        public bool isOdd( int num){
+            return num %2 == 0;
         }
   
         public void Foo(Lista<IFigura> parametro){
