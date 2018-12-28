@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 namespace ConsoleTest{
 
     public class Dibujo{
@@ -41,7 +43,7 @@ namespace ConsoleTest{
             Lista<Texto> lista2 = new Lista<Texto>(10);
             Foo(lista2)
              */
-
+/* 
             var listaInt = new Lista<int>(10);
             listaInt.Add(1);
             listaInt.Add(2);
@@ -71,7 +73,11 @@ namespace ConsoleTest{
             PredicateDelegate<int> p2 = i => i%2==0;
 
             //
+            */
 
+            IEnumerable<int> i = new []{1,2,3,4,5,6};
+            var l = new Lista<int>(10);
+            var suma = l.Skip(2).Where( x => x>3).Sum();
 
         }
 
