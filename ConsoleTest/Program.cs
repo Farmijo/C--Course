@@ -73,6 +73,7 @@ namespace ConsoleTest
             if(info.KeyChar == '1'){
 
                 Dibujo dibujo = new Dibujo();
+                
                 dibujo.Dibujar();
                 return true;
 

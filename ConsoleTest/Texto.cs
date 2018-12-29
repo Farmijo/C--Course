@@ -6,7 +6,7 @@ namespace ConsoleTest{
 
         private readonly string _texto;
 
-        public Texto(int fila, int columna, string texto) : base(fila, columna){
+        public Texto(int fila, int columna, string texto, string name) : base(fila, columna, name){
 
             _texto = texto;
 
