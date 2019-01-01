@@ -1,0 +1,14 @@
+/Users/farmijo/Desktop/repos/C--Course/apiRest/bin/Debug/netcoreapp2.1/apiRest.deps.json
+/Users/farmijo/Desktop/repos/C--Course/apiRest/bin/Debug/netcoreapp2.1/apiRest.runtimeconfig.json
+/Users/farmijo/Desktop/repos/C--Course/apiRest/bin/Debug/netcoreapp2.1/apiRest.runtimeconfig.dev.json
+/Users/farmijo/Desktop/repos/C--Course/apiRest/bin/Debug/netcoreapp2.1/apiRest.dll
+/Users/farmijo/Desktop/repos/C--Course/apiRest/bin/Debug/netcoreapp2.1/apiRest.pdb
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.csprojAssemblyReference.cache
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.csproj.CoreCompileInputs.cache
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.RazorAssemblyInfo.cache
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.RazorAssemblyInfo.cs
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.AssemblyInfoInputs.cache
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.AssemblyInfo.cs
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.RazorTargetAssemblyInfo.cache
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.dll
+/Users/farmijo/Desktop/repos/C--Course/apiRest/obj/Debug/netcoreapp2.1/apiRest.pdb

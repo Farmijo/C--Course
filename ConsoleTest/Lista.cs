@@ -30,7 +30,7 @@ En caso de no poder crear la clase X generica desde cero, una posible opción es
        void Add(T item);
        //Delegados Genericos: Func<T,Y>, donde T es el tipo de entrada y Y tipo de salids
       // IEnumerable<T> SearchByFunc(Func<T,bool> func);
-      // Tambien existe Action, funciones void
+      // Tambien existe Action, para funciones void
        IEnumerable<T> FindDelegate (Func<T,bool> predicate);
         IEnumerable<T> FindPredicate(IPredicate<T> predicate);
     }

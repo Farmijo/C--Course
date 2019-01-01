@@ -1,0 +1,11 @@
+/Users/farmijo/Desktop/repos/C--Course/Async/bin/Debug/netcoreapp2.1/Async.deps.json
+/Users/farmijo/Desktop/repos/C--Course/Async/bin/Debug/netcoreapp2.1/Async.runtimeconfig.json
+/Users/farmijo/Desktop/repos/C--Course/Async/bin/Debug/netcoreapp2.1/Async.runtimeconfig.dev.json
+/Users/farmijo/Desktop/repos/C--Course/Async/bin/Debug/netcoreapp2.1/Async.dll
+/Users/farmijo/Desktop/repos/C--Course/Async/bin/Debug/netcoreapp2.1/Async.pdb
+/Users/farmijo/Desktop/repos/C--Course/Async/obj/Debug/netcoreapp2.1/Async.csprojAssemblyReference.cache
+/Users/farmijo/Desktop/repos/C--Course/Async/obj/Debug/netcoreapp2.1/Async.csproj.CoreCompileInputs.cache
+/Users/farmijo/Desktop/repos/C--Course/Async/obj/Debug/netcoreapp2.1/Async.AssemblyInfoInputs.cache
+/Users/farmijo/Desktop/repos/C--Course/Async/obj/Debug/netcoreapp2.1/Async.AssemblyInfo.cs
+/Users/farmijo/Desktop/repos/C--Course/Async/obj/Debug/netcoreapp2.1/Async.dll
+/Users/farmijo/Desktop/repos/C--Course/Async/obj/Debug/netcoreapp2.1/Async.pdb
